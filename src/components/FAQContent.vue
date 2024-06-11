@@ -7,6 +7,8 @@ let isThird = ref(false)
 let isFourth = ref(false)
 let isFifth = ref(false)
 
+let data = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam blandit risus eu metus interdum auctor. Morbi molestie pulvinar ullamcorper. Mauris ac auctor nulla, at dignissim felis. Duis rhoncus, justo sit amet elementum eleifend, tortor est efficitur mi, consequat efficitur justo nulla non justo."
+
 </script>
 
 <template >
@@ -17,35 +19,35 @@ let isFifth = ref(false)
                 <h3>HOE WERKT MET</h3>
                 <button @click="isFirst = !isFirst" >+</button>
             </div>
-            <p v-show="isFirst">Lorem Ipsum </p>
+            <p v-show="isFirst">{{data}} </p>
             <div class="line"></div>
             <div class="content">
                 <h3>PRIJSUITREIKING</h3>
                 <button @click="isSecond = !isSecond" >+</button>
 
             </div>
-            <p v-show="isSecond">Lorem Ipsum</p>
+            <p v-show="isSecond">{{data}}</p>
             <div class="line"></div>
             <div class="content">
                 <h3>ALLES-VOORDELIGER.NL</h3>
                 <button @click="isThird = !isThird" >+</button>
 
             </div>
-            <p v-show="isThird">Lorem Ipsum</p>
+            <p v-show="isThird">{{data}}</p>
             <div class="line"></div>
             <div class="content">
                 <h3>DE VOORWAARDEN</h3>
                 <button @click="isFourth = !isFourth" >+</button>
 
             </div>
-            <p v-show="isFourth">Lorem Ipsum</p>
+            <p v-show="isFourth">{{data}}</p>
             <div class="line"></div>
             <div class="content">
                 <h3>DE ORGANISATION</h3>
                 <button @click="isFifth = !isFifth" >+</button>
 
             </div>
-            <p v-show="isFifth">Lorem Ipsum</p>
+            <p v-show="isFifth">{{data}}</p>
             <div class="line"></div>
         </div>
     </div>
