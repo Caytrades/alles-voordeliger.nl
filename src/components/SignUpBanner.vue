@@ -175,7 +175,8 @@ export default{
 
     .doe h4{
         font-size: 40px;
-        font-family: fantasy !important;
+        /* font-family: fantasy !important; */
+        font-family: "IM Fell English", serif;
         font-weight: 900;
         margin: unset;
         transform: rotate(-23deg);
@@ -198,7 +199,8 @@ export default{
     .container h3{
         font-size: 20px;
         font-weight: 900;
-        font-family: fantasy !important;
+        /* font-family: fantasy !important; */
+        font-family: "IM Fell English", serif;
     }
 
     .input-field input{
