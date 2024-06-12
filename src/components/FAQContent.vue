@@ -87,7 +87,7 @@ let data = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bla
 
 .content h3{
     font-weight: 700;
-    font-family: fantasy;
+    font-family: fantasy !important;
 }
 
 

@@ -116,7 +116,7 @@ export default{
 }
 
 .first h2{
-    font-family: fantasy;
+    font-family: fantasy !important;
     font-size: 100px;
     margin: unset;
     transform: rotate(-10deg);
@@ -126,7 +126,7 @@ export default{
 
 .first h4{
     font-size: 60px;
-    font-family: fantasy;
+    font-family: fantasy !important;
     font-weight: 900;
     margin: unset;
 }
@@ -220,7 +220,7 @@ export default{
 
     .doe h4{
         font-size: 40px;
-        font-family: fantasy;
+        font-family: fantasy !important;
         font-weight: 900;
         margin: unset;
         transform: rotate(-23deg);
@@ -243,7 +243,7 @@ export default{
     .container h3{
         font-size: 20px;
         font-weight: 900;
-        font-family: fantasy;
+        font-family: fantasy !important;
     }
 
     .input-field input{
