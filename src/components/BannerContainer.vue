@@ -46,6 +46,42 @@ export default{
                 <p style="color: white; font-size: 15px;">Dit wordt mogelijk gemaakt door Alles Voordeliger.nl</p>
             </div>
         </div>
+        <div class="mobile">
+            <div class="doe">
+                <div class="logo">
+                    <img src="./img/banner-logo.jpg" alt="">
+                </div>
+                <h4>DOE MEE <br> EN WIN!</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile">
+        <div class="container">
+            <h3>Maak kans op €500 cashback voor je energiecontracr!</h3>
+            <div class="check">
+                <i class="fa-regular fa-circle-check"></i>
+                <strong>Je wint altjid</strong>
+            </div>
+            <div class="check">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>Geen verplichtinge</p>
+            </div>
+            <div class="check">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>Een deelname per person</p>
+            </div>
+            <div class="check">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>Meedoen in 1 minuut</p>
+            </div>
+                <form class="input-field">
+                    <input type="text" placeholder="E-mailadres" required>
+                    <button @click="SignUp" type="submit">DOE MEE!</button>
+                </form>
+            <div class="line"></div>
+            <p style="color: white; font-size: 15px;">Dit wordt mogelijk gemaakt door Alles Voordeliger.nl</p>
+        </div>
     </div>
 </template>
 
@@ -159,10 +195,64 @@ export default{
     height: 2px;
 }
 
+
+.mobile{
+    display: none;
+}
+
 @media only screen and (max-width: 932px) {
     
     .content{
         display: none;
+    }
+
+    .mobile{
+        display: contents;
+    }
+
+    .doe{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        top: 2px;
+    }
+
+    .doe h4{
+        font-size: 40px;
+        font-family: fantasy;
+        font-weight: 900;
+        margin: unset;
+        transform: rotate(-23deg);
+        margin-left: 50px;
+    }
+
+    .logo{
+        padding: unset;
+    }
+
+    .logo img{
+        width: 50%;
+    }
+
+    .container{
+        margin-top: 30px; 
+       margin-left: 20px;
+    }
+
+    .container h3{
+        font-size: 20px;
+        font-weight: 900;
+        font-family: fantasy;
+    }
+
+    .input-field input{
+        width: 300px;
+    }
+
+    .input-field button{
+        width: 340px;
+        background-color: #F2C075 ;
     }
     
 }
