@@ -48,7 +48,7 @@ export default{
         <div class="container">
             <h3>Maak kans op €500 cashback voor je energiecontracr!</h3>
            
-            <form class="input-field">
+            <form @submit.prevent="register" class="input-field">
                     <input type="text" placeholder="Voonaam" required>
                     <input type="text" placeholder="Achternaam" required>
                     <input type="text" placeholder="Telefoonnummer" required>
@@ -156,6 +156,10 @@ export default{
     height: 2px;
 } 
 
+.mobile{
+    display: none;
+}
+
 @media only screen and (max-width: 932px) {
     .content{
         display: none;
@@ -175,7 +179,7 @@ export default{
 
     .doe h4{
         font-size: 40px;
-        /* font-family: fantasy !important; */
+        font-family: fantasy !important;
         font-family: "IM Fell English", serif;
         font-weight: 900;
         margin: unset;
@@ -199,7 +203,7 @@ export default{
     .container h3{
         font-size: 20px;
         font-weight: 900;
-        /* font-family: fantasy !important; */
+        font-family: fantasy !important;
         font-family: "IM Fell English", serif;
     }
 

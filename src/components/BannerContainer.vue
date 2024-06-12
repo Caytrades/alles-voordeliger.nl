@@ -1,7 +1,7 @@
 <script>
 export default{
     methods: {
-        SignUp() {
+        signUp() {
             this.$router.push('/signup')
         }
     },
@@ -38,9 +38,9 @@ export default{
                     <i class="fa-regular fa-circle-check"></i>
                     <p>Meedoen in 1 minuut</p>
                 </div>
-                    <form class="input-field">
+                    <form @submit.prevent="signUp" class="input-field">
                         <input type="text" placeholder="E-mailadres" required>
-                        <button @click="SignUp" type="submit">DOE MEE!</button>
+                        <button type="submit">DOE MEE!</button>
                     </form>
                 <div class="line"></div>
                 <p style="color: white; font-size: 15px;">Dit wordt mogelijk gemaakt door Alles Voordeliger.nl</p>
@@ -220,7 +220,8 @@ export default{
 
     .doe h4{
         font-size: 40px;
-        font-family: fantasy !important;
+        /* font-family: fantasy !important; */
+        font-family: "IM Fell English", serif;
         font-weight: 900;
         margin: unset;
         transform: rotate(-23deg);
@@ -243,7 +244,9 @@ export default{
     .container h3{
         font-size: 20px;
         font-weight: 900;
-        font-family: fantasy !important;
+        /* font-family: fantasy !important; */
+        font-family: "IM Fell English", serif;
+
     }
 
     .input-field input{

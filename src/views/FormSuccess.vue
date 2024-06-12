@@ -7,7 +7,7 @@ import LoadingAnimation from '../components/LoadingAnimation.vue'
 
 <template>
     <div class="container">
-      <transition name="fade" v-for="(item, index) in items" :key="index">
+      <transition name="fade" v-for="(item, i) in items" :key="i">
         <div class="loading" v-show="item.loading">
             <LoadingAnimation/>
         </div>

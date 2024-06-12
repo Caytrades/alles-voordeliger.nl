@@ -126,6 +126,10 @@ let data = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bla
      width: 600px;
     }
 
+    .content h3{
+        font-family: "IM Fell English", serif;
+    }
+
 }
 
     
