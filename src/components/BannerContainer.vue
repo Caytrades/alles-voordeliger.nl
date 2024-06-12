@@ -39,7 +39,7 @@ export default{
                     <p>Meedoen in 1 minuut</p>
                 </div>
                     <form @submit.prevent="signUp" class="input-field">
-                        <input type="text" placeholder="E-mailadres" required>
+                        <input type="email" placeholder="E-mailadres" required>
                         <button type="submit">DOE MEE!</button>
                     </form>
                 <div class="line"></div>
@@ -75,9 +75,9 @@ export default{
                 <i class="fa-regular fa-circle-check"></i>
                 <p>Meedoen in 1 minuut</p>
             </div>
-                <form class="input-field">
+                <form @submit.prevent="signUp" class="input-field">
                     <input type="text" placeholder="E-mailadres" required>
-                    <button @click="SignUp" type="submit">DOE MEE!</button>
+                    <button type="submit">DOE MEE!</button>
                 </form>
             <div class="line"></div>
             <p style="color: white; font-size: 15px;">Dit wordt mogelijk gemaakt door Alles Voordeliger.nl</p>

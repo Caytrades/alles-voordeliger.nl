@@ -25,11 +25,11 @@ export default{
                 <h3>Cash</h3>
                 <br>
                 <h4>DOE MEE EN WIN!</h4>
-                <form class="input-field">
+                <form @submit.prevent="register" class="input-field">
                         <input type="text" placeholder="Voonaam" required>
                         <input type="text" placeholder="Achternaam" required>
-                        <input type="text" placeholder="Telefoonnummer" required>
-                        <button @click="register" type="submit">Volgende stap</button>
+                        <input type="number" placeholder="Telefoonnummer" required>
+                        <button type="submit">Volgende stap</button>
                 </form>
                 <div class="line"></div>
                 <p style="color: white; font-size: 15px;">Dit wordt mogelijk gemaakt door Alles Voordeliger.nl</p>
@@ -48,11 +48,11 @@ export default{
         <div class="container">
             <h3>Maak kans op €500 cashback voor je energiecontracr!</h3>
            
-            <form @submit.prevent="register" class="input-field">
+            <form @submit="register" class="input-field">
                     <input type="text" placeholder="Voonaam" required>
                     <input type="text" placeholder="Achternaam" required>
-                    <input type="text" placeholder="Telefoonnummer" required>
-                    <button @click="register" type="submit">Volgende stap</button>
+                    <input type="number" placeholder="Telefoonnummer" required>
+                    <button type="submit">Volgende stap</button>
             </form>
             <div class="line"></div>
             <p style="color: white; font-size: 15px;">Dit wordt mogelijk gemaakt door Alles Voordeliger.nl</p>
